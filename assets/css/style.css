@@ -1,0 +1,149 @@
+html, body {
+  background-color: #fff; }
+
+.animate, .navbar .dropdown, .navbar .dropdown-toggle, [class*="container"].container-instagram .instagram-tile .instagram-hover, .animate:hover, .navbar .dropdown:hover, .navbar .dropdown-toggle:hover, [class*="container"].container-instagram .instagram-tile .instagram-hover:hover, .animate:focus, .navbar .dropdown:focus, .navbar .dropdown-toggle:focus, [class*="container"].container-instagram .instagram-tile .instagram-hover:focus {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 46px;
+  font-size: 46px;
+  margin: 0 0 23px 0; }
+
+.navbar {
+  background: transparent;
+  border-bottom: 0;
+  margin-bottom: 0;
+  border-radius: 0; }
+  .navbar.navbar-grey {
+    background: #171818; }
+  .navbar .user-img {
+    width: 24px;
+    display: inline-block;
+    border-radius: 50px;
+    margin: -7px 5px -5px; }
+  .navbar .dropdown:hover, .navbar .dropdown:focus, .navbar .dropdown:active, .navbar .dropdown-toggle:hover, .navbar .dropdown-toggle:focus, .navbar .dropdown-toggle:active {
+    background: #222 !important; }
+  .navbar .dropdown-menu {
+    background-color: #333;
+    border-color: #080808; }
+    .navbar .dropdown-menu li > a {
+      color: #999;
+      padding: 10px 20px;
+      font-weight: 300; }
+      .navbar .dropdown-menu li > a:hover {
+        color: #fff;
+        background-color: #222; }
+    .navbar .dropdown-menu .no-hover {
+      color: #999; }
+      .navbar .dropdown-menu .no-hover:hover {
+        background-color: #333;
+        color: #999; }
+    .navbar .dropdown-menu .divider {
+      width: 100%;
+      background-color: #222;
+      margin: 0;
+      display: table; }
+  .navbar .navbar-brand {
+    font-family: 'Lato', sans-serif;
+    color: #ffce2e;
+    font-weight: 300; }
+    .navbar .navbar-brand:hover {
+      color: #171818; }
+  .navbar .navbar-nav li a {
+    color: #6ADD97;
+    font-weight: 300; }
+    .navbar .navbar-nav li a:hover {
+      color: white; }
+
+.nav-border {
+  height: 5px;
+  width: 100%;
+  background: #0030cc;
+  background: -moz-linear-gradient(left, #0030cc 0%, #00db52 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #0030cc), color-stop(100%, #00db52));
+  background: -webkit-linear-gradient(left, #0030cc 0%, #00db52 100%);
+  background: -o-linear-gradient(left, #0030cc 0%, #00db52 100%);
+  background: -ms-linear-gradient(left, #0030cc 0%, #00db52 100%);
+  background: linear-gradient(to right, #0030cc 0%, #00db52 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0030cc', endColorstr='#00db52', GradientType=1); }
+
+[class*="container"].container-jumbotron {
+  text-align: center;
+  font-style: italic; }
+  [class*="container"].container-jumbotron img {
+    max-width: 250px;
+    padding: 40px 40px 20px; }
+[class*="container"].container-instagram .instagram-bar {
+  background: #171818;
+  height: 30px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 3px; }
+[class*="container"].container-instagram .col-md-3 {
+  padding: 0; }
+[class*="container"].container-instagram .col-md-4 .instagram-tile {
+  height: 293px;
+  max-width: 293px; }
+[class*="container"].container-instagram .col-md-3 .instagram-tile {
+  height: 292px; }
+[class*="container"].container-instagram .instagram-tile {
+  background: #222;
+  color: white;
+  height: 293px;
+  max-width: 293px;
+  width: 100%;
+  cursor: pointer; }
+  [class*="container"].container-instagram .instagram-tile .instagram-hover {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, #212121 79%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(51%, rgba(33, 33, 33, 0.8)), color-stop(56%, rgba(33, 33, 33, 0.88)), color-stop(79%, #212121));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, #212121 79%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, #212121 79%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, #212121 79%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, #212121 79%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#212121', GradientType=0);
+    opacity: 0; }
+    [class*="container"].container-instagram .instagram-tile .instagram-hover:hover {
+      opacity: 1; }
+    [class*="container"].container-instagram .instagram-tile .instagram-hover .instagram-likes, [class*="container"].container-instagram .instagram-tile .instagram-hover .instagram-comments {
+      bottom: 0;
+      position: absolute;
+      font-weight: 100;
+      padding: 10px 20px;
+      font-size: 30px; }
+    [class*="container"].container-instagram .instagram-tile .instagram-hover .instagram-comments {
+      right: 0; }
+[class*="container"].container-info {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  [class*="container"].container-info .col-md-1-5 {
+    width: 12.5%; }
+    [class*="container"].container-info .col-md-1-5 img {
+      margin: 20px auto; }
+[class*="container"].container-projects .project-tile {
+  background: #171818;
+  color: white;
+  margin: 40px 0; }
+  [class*="container"].container-projects .project-tile .col-md-3 {
+    padding: 0; }
+  [class*="container"].container-projects .project-tile h2 {
+    margin: 20px auto;
+    font-weight: 300; }
+  [class*="container"].container-projects .project-tile .photo {
+    max-height: 320px;
+    background: #333;
+    height: 320px; }
+  [class*="container"].container-projects .project-tile .icon {
+    width: 50px;
+    height: 50px;
+    margin: 11px 7px;
+    float: right; }
+
+/*# sourceMappingURL=style.css.map */

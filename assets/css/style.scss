@@ -1,0 +1,222 @@
+$brand: #171818;
+
+html, body {
+	background-color: #fff;
+}
+
+.animate, .animate:hover, .animate:focus {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	line-height: 46px;
+	font-size: 46px;
+	margin: 0 0 23px 0;
+}
+
+.navbar {
+	background: transparent;
+	border-bottom: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+
+	&.navbar-grey {
+		background: $brand;
+	}
+
+	.user-img {
+		width: 24px;
+		display: inline-block;
+		border-radius: 50px;
+		margin: -7px 5px -5px;
+	}
+	.dropdown, .dropdown-toggle {
+		@extend .animate;
+		&:hover, &:focus, &:active {
+			background: #222 !important;
+		}
+	}
+	.dropdown-menu {
+		background-color: #333;
+		border-color: #080808;
+		li > a {
+			color: #999;
+			padding: 10px 20px;
+			font-weight: 300;
+			&:hover {
+				color: #fff;
+				background-color: #222;
+			}
+		}
+
+		.no-hover {
+			color: #999;
+			&:hover {
+				background-color: #333;
+				color: #999;
+			}
+		}
+
+		.divider {
+			width: 100%;
+			background-color: #222;
+			margin: 0;
+			display: table;
+		}
+	}
+
+	.navbar-brand {
+		font-family: 'Lato', sans-serif;
+		color: #ffce2e;
+		font-weight: 300;
+
+		&:hover {
+			color: $brand;
+		}
+	}
+	.navbar-nav {
+		li {
+			a {
+				color: #6ADD97;
+				font-weight: 300;
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+.nav-border {
+	height: 5px;
+	width: 100%;
+	background: rgba(0, 48, 204, 1);
+	background: -moz-linear-gradient(left, rgba(0, 48, 204, 1) 0%, rgba(0, 219, 82, 1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 48, 204, 1)), color-stop(100%, rgba(0, 219, 82, 1)));
+	background: -webkit-linear-gradient(left, rgba(0, 48, 204, 1) 0%, rgba(0, 219, 82, 1) 100%);
+	background: -o-linear-gradient(left, rgba(0, 48, 204, 1) 0%, rgba(0, 219, 82, 1) 100%);
+	background: -ms-linear-gradient(left, rgba(0, 48, 204, 1) 0%, rgba(0, 219, 82, 1) 100%);
+	background: linear-gradient(to right, rgba(0, 48, 204, 1) 0%, rgba(0, 219, 82, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0030cc', endColorstr='#00db52', GradientType=1);
+}
+
+[class*="container"] {
+	&.container-jumbotron {
+		text-align: center;
+		font-style: italic;
+
+		img {
+			max-width: 250px;
+			padding: 40px 40px 20px;
+		}
+	}
+	&.container-instagram {
+
+
+		.instagram-bar {
+			background: $brand;
+			height: 30px;
+			width: 100%;
+			margin-top: 20px;
+			margin-bottom: 3px;
+
+		}
+		.col-md-3 {
+			padding: 0;
+		}
+
+		.col-md-4 .instagram-tile {
+			height: 293px;
+			max-width: 293px;
+		}
+
+		.col-md-3 .instagram-tile {
+			height: 292px;
+		}
+		.instagram-tile {
+			background: #222;
+			color: white;
+			height: 293px;
+			max-width: 293px;
+			width: 100%;
+			cursor: pointer;
+
+			.instagram-hover {
+				@extend .animate;
+				height: 100%;
+				width: 100%;
+
+				background: rgba(255, 255, 255, 0);
+				background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, rgba(33, 33, 33, 1) 79%);
+				background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(51%, rgba(33, 33, 33, 0.8)), color-stop(56%, rgba(33, 33, 33, 0.88)), color-stop(79%, rgba(33, 33, 33, 1)));
+				background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, rgba(33, 33, 33, 1) 79%);
+				background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, rgba(33, 33, 33, 1) 79%);
+				background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, rgba(33, 33, 33, 1) 79%);
+				background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(33, 33, 33, 0.8) 51%, rgba(33, 33, 33, 0.88) 56%, rgba(33, 33, 33, 1) 79%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#212121', GradientType=0);
+
+				opacity: 0;
+				&:hover {
+					opacity: 1;
+				}
+
+				.instagram-likes, .instagram-comments {
+					bottom: 0;
+					position: absolute;
+					font-weight: 100;
+					padding: 10px 20px;
+					font-size: 30px;
+				}
+
+				.instagram-comments {
+					right: 0;
+				}
+			}
+		}
+
+	}
+	&.container-info {
+		margin-top: 40px;
+		margin-bottom: 40px;
+
+		.col-md-1-5 {
+			width: 12.5%;
+
+			img {
+				margin: 20px auto;
+			}
+		}
+	}
+	&.container-projects {
+		.project-tile {
+			background: $brand;
+			color: white;
+			margin: 40px 0;
+
+			.col-md-3 {
+				padding: 0;
+			}
+
+			h2 {
+				margin: 20px auto;
+				font-weight: 300;
+			}
+			.photo {
+				max-height: 320px;
+				background: #333;
+				height: 320px;
+			}
+			.icon {
+				width: 50px;
+				height: 50px;
+				margin: 11px 7px;
+				float: right;
+			}
+		}
+	}
+}
